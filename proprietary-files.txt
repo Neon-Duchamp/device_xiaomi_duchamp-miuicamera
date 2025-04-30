@@ -7,3 +7,4 @@ system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so
 system_ext/lib64/libmtkisp_metadata_sys.so
 system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so;MODULE_SUFFIX=-system_ext
 system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so;MODULE_SUFFIX=-system_ext
+system_ext/framework/camerax-vendor-extensions.jar

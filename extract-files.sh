@@ -54,7 +54,6 @@ fi
 function blob_fixup() {
     case "${1}" in
         system_ext/priv-app/MiuiCamera/MiuiCamera.apk)
-            # Replace Miui Gallery with Google Photos
             tmp_dir="${EXTRACT_TMP_DIR}/MiuiCamera"
             apktool d -q "$2" -o "$tmp_dir" -f
             grep -rl "com.miui.gallery" "$tmp_dir" | xargs sed -i 's|com\.miui\.gallery|com\.google\.android\.apps\.photos|g'

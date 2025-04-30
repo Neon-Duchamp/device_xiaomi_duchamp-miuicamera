@@ -20,5 +20,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# CameraExtensions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
+
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/duchamp-miuicamera/duchamp-miuicamera-vendor.mk)
