@@ -66,9 +66,9 @@ function blob_fixup() {
         system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so)
             "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
             ;;
-        system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so)
-            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V1-ndk.so" \
-                "android.hardware.graphics.common-V2-ndk.so" "${2}"
+        system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so)
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V5-ndk.so" \
+                "android.hardware.graphics.common-V6-ndk.so" "${2}"
             ;;
     esac
 }
